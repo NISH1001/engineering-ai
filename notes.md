@@ -1,10 +1,15 @@
-http://www-g.eng.cam.ac.uk/mmg/teaching/artificialintelligence/nonflash/problemframenf.htm
-http://webia.lip6.fr/~codognet/PSAI/1-introduction.pdf
+# Chapter 1
+- https://en.wikipedia.org/wiki/Timeline_of_artificial_intelligence
+- https://digitalwellbeing.org/artificial-intelligence-timeline-infographic-from-eliza-to-tay-and-beyond/
+
+# Chapter 2
+- http://www-g.eng.cam.ac.uk/mmg/teaching/artificialintelligence/nonflash/problemframenf.htm
+- http://webia.lip6.fr/~codognet/PSAI/1-introduction.pdf
 
 
 # Chapter 3
-http://teleported.in/posts/ai-search-algorithms/
-https://mhesham.wordpress.com/tag/depth-limited-search/
+- http://teleported.in/posts/ai-search-algorithms/
+- https://mhesham.wordpress.com/tag/depth-limited-search/
 
 
 
@@ -18,4 +23,4 @@ https://mhesham.wordpress.com/tag/depth-limited-search/
     Output: the final state s
 
 # Chapter 5
-https://users.cs.cf.ac.uk/Dave.Marshall/AI2/
+- https://users.cs.cf.ac.uk/Dave.Marshall/AI2/
