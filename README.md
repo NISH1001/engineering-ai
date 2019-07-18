@@ -11,14 +11,9 @@ The slides are according to chapters they cover.
 These aren't the BEST resources you can find in the internet, but are meant to be taken as abstract concepts for the course.  
 
 ---
-
-
-- Chapter 1
-- Chapter 2
-- Chapter 3
-- Chapter 6
-
+http://www.nishanpantha.com.np/engineering-ai/
 ---
+
 
 Cheers. Enjoy. Keep on learning. Keep on sharing.
 
