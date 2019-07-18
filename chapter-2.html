@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Introduction to AI</title>
+
+		<meta name="description" content="Experience">
+		<meta name="author" content="Paradox">
+
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="./css/reveal.css">
+		<link rel="stylesheet" href="./css/theme/league.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="./lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? './css/print/pdf.css' : './css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+                <section>
+                    <div style="font-size: 2.8em"><br><font color="#90caf9"><span style="font-size:1.3em">Problem Solving</span></font></div>
+                    <div>
+                        <span style="font-size: 0.6em;"><font color="#fff">Nishan Pantha / <i>@nishparadox</i></font></span> <br>
+                        <span style="font-size: 0.6em;"><font color="#fff"><i>nishanpantha@gmail.com</i></font></span> <br>
+                    </div>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>What This Chapter Is About</h2>
+                    </section>
+                    <section>
+                        <p class="fragment fade-in">Defining Problems as <font color="#ff0000">State Space Search</font></p>
+                        <p class="fragment fade-in">Problem Formulation</p>
+                        <p class="fragment fade-in">Problem Types</p>
+                        <p class="fragment fade-in">Well-Defined Problems</p>
+                        <p class="fragment fade-in">Constraint Satisfaction Problems</p>
+                        <p class="fragment fade-in">Game Playing</p>
+                        <p class="fragment fade-in">Production Systems</p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Rational Agents and <font color="#0ff000">PEAS</font></h3>
+                        <p class="fragment fade-in">Performance</p>
+                        <p class="fragment fade-in">Environment</p>
+                        <p class="fragment fade-in">Actuators</p>
+                        <p class="fragment fade-in">Sensors</p>
+                    </section>
+                    <section>
+                        <h3>Rational Agents</h3>
+                        <img src="./images/chapter-2/agents/rational-agent.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <h3>Simple Reflex Agent</h3>
+                        <img src="./images/chapter-2/agents/simple-reflex-agent.png" width="1000" height="550"></img>
+                        <p>No History</p>
+                    </section>
+
+                    <section>
+                        <h3>Model-Based Reflex Agent</h3>
+                        <img src="./images/chapter-2/agents/model-based-reflex-agent.png" width="1000" height="550"></img>
+                    </section>
+
+                    <section>
+                        <h3>Goal-Based Agent</h3>
+                        <img src="./images/chapter-2/agents/goal-based-agent.png" width="1000" height="550"></img>
+                    </section>
+
+                    <section>
+                        <h3>Utility-Based Agent</h3>
+                        <img src="./images/chapter-2/agents/utility-based-agent.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <h3>Task Environment</h3>
+                        <img src="./images/chapter-2/agents/environment.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <p>A Vacuum Cleaner with only 2 Locations</p>
+                        <img src="./images/chapter-2/agents/vacuum/1.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <p>Partial Tabulation of a Simple Function</p>
+                        <img src="./images/chapter-2/agents/vacuum/2.png" width="1000" height="550"></img>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Problem Solving</h3>
+                        <p>Goal-Based Agent</p>
+                    </section>
+                    <section>
+                        <h3>Steps</h3>
+                        <p class="fragment fade-in">Goal Formulation</p>
+                        <p class="fragment fade-in">Problem Formulation</p>
+                        <p class="fragment fade-in">Searching</p>
+                        <p class="fragment fade-in">Execution</p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Environment</h3>
+                        <p class="fragment fade-in">Static</p>
+                        <p class="fragment fade-in">Observable</p>
+                        <p class="fragment fade-in">Descrete</p>
+                        <p class="fragment fade-in">Deterministic</p>
+                    </section>
+                    <section>
+                        <h3>Open Loop System</h3>
+                        <p>Agent carries out its plan with its eyes closed<p>
+                    </section>
+                    <section>
+                        <h3>Well-Defined Problem</h3>
+                        <p>- Initial state</p>
+                        <p>- Action and Successor Function</p>
+                        <p>- Path Cost</p>
+                        <p>- Goal Test</p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Problem Solving Using Search</h3>
+                    </section>
+                    <section>
+                        <h3>What is Problem Solving?</h3>
+                        <p class="fragment fade-in">Generating solutions from observed data</p>
+                    </section>
+                    <section>
+                        <h3>Problem</h3>
+                        <p>- Set of Goals</p>
+                        <p>- Set of Objects</p>
+                        <p>- Set of Operations</p>
+                    </section>
+                    <section>
+                        <h3>Problem Space</h3>
+                        <p>All valid states using operations on objects</p>
+                    </section>
+                    <section>
+                        <h3>Search</h3>
+                        <p>- Search for solution in problem space</p>
+                        <p>- Example: DFS, BFS,...</p>
+                    </section>
+                    <section>
+                        <h3>8 Puzzle</h3>
+                        <img src="./images/chapter-2/8-puzzle.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <h3>N Queen</h3>
+                        <img src="./images/chapter-2/nqueens.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <h3>Path Finding</h3>
+                        <img src="./images/chapter-2/path-find.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <img src="./images/chapter-2/toh.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <h3>Tower of Hanoi</h3>
+                        <p><font color="#90caf9">Actions:</font> PICKUP, PUTDOWN, FORWARD, BACKWARD, LEFT, RIGHT</p>
+                        <p><font color="#90caf9">Condition-1:</font> Only top ring can be moved at a time</p>
+                        <p><font color="#90caf9">Condition-2:</font> Smaller ring cannot be below the large one</p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Graph Search</h3>
+                        <p>- Direct Graph</p>
+                        <p>- Start from Initial State<p>
+                        <p>- Use operations</p>
+                        <p>- Check Goal State</p>
+                    </section>
+                    <section>
+                        <img src="./images/chapter-2/vacuum-graph.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <h3>Tower of Hanoi State Space Representation</h3>
+                        <img src="./images/chapter-2/toh-state-space.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <h3>8-Puzzle State Space Representation</h3>
+                        <img src="./images/chapter-2/8-puzzle-state-space.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <h3>Example: Water Jug Problem</h3>
+                        <img src="./images/chapter-2/water-jug-34.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <h3>Problem</h3>
+                        <p>1 Glass of 3L, 1 Glass of 4L</p>
+                        <p>We want 2L in 4L Glass</p>
+                    </section>
+                    <section>
+                        <h3>Formulation of Problem</h3>
+                        <p class="fragment fade-in">Variables: G3, G4</p>
+                        <p class="fragment fade-in">Initial State: (0, 0)</p>
+                        <p class="fragment fade-in">Goal State: (*, 2)</p>
+                        <p class="fragment fade-in">Actions: FILL, EMPTY, ???</p>
+                    </section>
+                    <section>
+                        <h3>Solution</h3>
+                        <p class="fragment fade-in"><font color="#90caf9">Initial State: (0, 0)</font></p>
+                        <p class="fragment fade-in">FILL3: (3, 0)</p>
+                        <p class="fragment fade-in">EMPTY34: (0, 3)</p>
+                        <p class="fragment fade-in">FILL3: (3, 3)</p>
+                        <p class="fragment fade-in">EMPTY34: (2, 4)</p>
+                        <p class="fragment fade-in">EMPTY4: (2, 0)</p>
+                        <p class="fragment fade-in"><font color="#ff0000">(Goal State)EMPTY34: (0, 2)</font></p>
+                    </section>
+                    <section>
+                        <img src="./images/chapter-2/water-jug-34-state-space.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <h3>Problem</h3>
+                        <p>1 Glass of 3L, 1 Glass of 5L, 1 Glass of 9L</p>
+                        <p>Measure 7L of Water</p>
+                    </section>
+                    <section>
+                        <h3>Solution ?</h3>
+                        <p class="fragment fade-in"><font color="#90caf9">Initial State: (0, 0, 0)</font></p>
+                        <p class="fragment fade-in">FILL5: (0, 5, 0)</p>
+                        <p class="fragment fade-in">EMPTY53: (3, 2, 0)</p>
+                        <p class="fragment fade-in">EMPTY59: (3, 0, 2)</p>
+                        <p class="fragment fade-in">FILL5: (3, 5, 2)</p>
+                        <p class="fragment fade-in"><font color="#ff0000">(Goal State)EMPTY59: (3, 0, 7)</font></p>
+                    </section>
+
+                    <section>
+                        <h3>Problem Solving Agent</h3>
+                        <img src="./images/chapter-2/agents/problem-solving-agent.png" width="1000" height="550"></img>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Problem Types</h3>
+                    </section>
+                    <section>
+                        <h3>Single-State Problem</h3>
+                        <p>- Deterministic, Accessible</p>
+                        <p>- Agent Knows Everything(exact state) About The World</p>
+                        <p>- Eg: Playing chess<p>
+                    </section>
+                    <section>
+                        <h3>Multi-State Problem</h3>
+                        <p>- Deterministic, Inaccessible</p>
+                        <p>- Agent doesn't know exact state</p>
+                        <p>- Eg: Walking in a dark room<p>
+                    </section>
+                    <section>
+                        <h3>Contingency Problem</h3>
+                        <p>- Non-Deterministic, Inaccessible</p>
+                        <p>- Agent doesn't know exact state</p>
+                        <p>- Eg: A new skater: sliding problem, many skaters around<p>
+                    </section>
+                    <section>
+                        <h3>Exploration Problem</h3>
+                        <p>Discover (eg: Maze)<p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Cryptarithmetic</h3>
+                    </section>
+                    <section>
+                        <h3>Constraint Satisfaction Problem</h3>
+                        <p class="fragment fade-in"><font color="#ff0000">Variables: </font>x1, x2,...</p>
+                        <p class="fragment fade-in"><font color="#ff0000">Constraints: </font>c1, c2,...</p>
+                        <p class="fragment fade-in"><font color="#ff0000">Domain: </font>Di (non-empty)</p>
+                        <p class="fragment fade-in"><font color="#ff0000">Values: </font>vi</p>
+                        <p class="fragment fade-in"><font color="#ff0000">xi=vi, xj=vj</font></p>
+                    </section>
+                    <section>
+                        <h3>Cryptarithmetic</h3>
+                        <h4>TWO + TWO = FOUR</h4>
+                        <p class="fragment fade-in"><font color="#ff0000">States: </font>Cryptarithmetic problem with letters repaced with digits</p>
+                        <p class="fragment fade-in"><font color="#ff0000">Actions: </font>Replace letter with unused digit</p>
+                        <p class="fragment fade-in"><font color="#ff0000">Goal Test: </font>Puzzle contains only digits</p>
+                    </section>
+                    <section>
+                        <h3>Cryptarithmetic</h3>
+                        <h4>SEND + MORE = MONEY</h4>
+                        <p class="fragment fade-in"><font color="#ff0000">9567 + 1085 = 10652</font></p>
+                    </section>
+
+                    <section>
+                        <h3>Cannibals and Missionaries</h3>
+                        <p class="fragment fade-in"><font color="#ff0000">State: </font>3M and 3C in either side of river</p>
+                        <p class="fragment fade-in"><font color="#ff0000">Condition: </font>If C>M at one side, C eats M</p>
+                        <p class="fragment fade-in"><font color="#ff0000">Operations: </font>Move using Boat, boat needs 1 or 2 to move</p>
+                        <p class="fragment fade-in"><font color="#ff0000">Goal Test: </font>3C and 3M  in the other side of river</p>
+                        <p class="fragment fade-in"><font color="#ff0000">Path Cost: </font>Number of crossings</p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Game Playing</h3>
+                    </section>
+                    <section>
+                        <p>Games are well-defined</p>
+                        <p>Good for testing search methods</p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Production System</h3>
+                    </section>
+                    <section>
+                        <h3>Rules of the form C=>A</h3>
+                        <p class="fragment fade-in"><font color="#f0ff00">Triggered:</font> Pre-condition match</p>
+                        <p class="fragment fade-in"><font color="#f0ff00">Fired:</font> Action Executed</p>
+                    </section>
+                    <section>
+                        <h3>Production System</h3>
+                        <img src="./images/chapter-2/production-rule-jug34.png" width="1000" height="550"></img>
+                    </section>
+                </section>
+
+                <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+                    <p>Research</p>
+                </section>
+
+            </div>
+
+		</div>
+
+		<script src="./lib/js/head.min.js"></script>
+		<script src="./js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				mouseWheel: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: './plugin/zoom-js/zoom.js', async: true },
+					{ src: './plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

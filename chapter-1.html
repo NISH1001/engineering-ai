@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Introduction to AI</title>
+
+		<meta name="description" content="Experience">
+		<meta name="author" content="Paradox">
+
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="./css/reveal.css">
+		<link rel="stylesheet" href="./css/theme/league.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="./lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? './css/print/pdf.css' : './css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+                <section>
+                    <div style="font-size: 2.8em">Introduction To<br><font color="#90caf9"><span style="font-size:1.3em">AI</span></font></div>
+                    <div>
+                        <span style="font-size: 0.6em;"><font color="#fff">Nishan Pantha / <i>@nishparadox</i></font></span> <br>
+                        <span style="font-size: 0.6em;"><font color="#fff">GitHub/ <i>NISH1001</i></font></span> <br>
+                        <span style="font-size: 0.6em;"><font color="#fff"><i>nishanpantha.com.np</i></font></span> <br>
+                        <span style="font-size: 0.6em;"><font color="#fff"><i>nishanpantha@gmail.com</i></font></span> <br>
+                    </div>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>What This Chapter Is About</h2>
+                    </section>
+                    <section>
+                        <p class="fragment fade-in">Definition of <font color="#ff0000">AI</font></p>
+                        <p class="fragment fade-in">Importance of AI</p>
+                        <p class="fragment fade-in">AI and Related Fields</p>
+                        <p class="fragment fade-in">Brief History of AI</p>
+                        <p class="fragment fade-in">Applications of AI</p>
+                        <p class="fragment fade-in">Definition and Importance of Knowledge and Learning</p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>But first...</h2>
+                        <p>what is <font color="#0ff">Artificial Intelligence</font>?</p>
+                    </section>
+
+                    <section>
+                        <p>Building systems that can do intelligent things</p>
+                    </section>
+
+                    <section>
+                        <h2>Intelligence is</h2>
+                        <p class="fragment fade-in"><font color="#0ff">Perpective</font></p>
+                        <p class="fragment fade-in"><font color="#42a5f5">Psychological</font></p>
+                        <p class="fragment fade-in"><font color="#af0">Ambiguous</font></p>
+                    </section>
+
+                    <section>
+                        <h3>Map</h3>
+                        <img src="./images/chapter-1/map.jpeg"></img>
+                    </section>
+
+                    <section>
+                        <h3>Translate</h3>
+                        <img src="./images/chapter-1/translate.jpeg"></img>
+                    </section>
+
+                    <section>
+                        <h3>Alpha Go</h3>
+                        <img src="./images/chapter-1/alpha_go.jpg"></img>
+                    </section>
+
+                    <section>
+                        <h3>Youtube's Recommendation</h3>
+                        <img src="./images/chapter-1/rick_and_morty.jpeg"></img>
+                    </section>
+
+                    <section>
+                        <h3>Facebook's News Feed</h3>
+                        <img src="./images/chapter-1/newsfeed.jpg"></img>
+                    </section>
+
+                    <section>
+                        <h3>Photo Manipulation</h3>
+                        <img src="./images/chapter-1/prisma.jpeg"></img>
+                    </section>
+
+                    <section>
+                        <h3>Drones</h3>
+                        <img src="./images/chapter-1/drone-rescue.jpg"></img>
+                    </section>
+
+                    <section>
+                        <h3>Text Generation</h3>
+                        <img src="./images/chapter-1/text-generation.jpeg" height="100"></img>
+                    </section>
+
+                    <section>
+                        <h3>Face Recognition</h3>
+                        <img src="./images/chapter-1/face-recognition.jpeg" height="500"></img>
+                    </section>
+                    <section>
+                        <h3>Other</h3>
+                        <ul>
+                            <li>Spam Filter in Email</li>
+                            <li>Google Search</li>
+                            <li>Weather Prediction</li>
+                            <li>Games</li>
+                            <li>Speech Recognition</li>
+                            <li>Chatbots</li>
+                            <li>Well...You can list more...</li>
+                        </ul>
+                    </section>
+
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Philosophy (and general)<font color="#0ff"> Definitions </font></h2>
+                    </section>
+
+                    <section>
+                        <h2>Aspects</h2>
+                        <p class="fragment fade-in"><font color="#0ff">Thought Process/Reasoning</font></p>
+                        <p class="fragment fade-in"><font color="#42a5f5">Behavioural</font></p>
+                    </section>
+
+                    <section>
+                        <h2>Thought Process</h2>
+                        <p class="fragment fade-in"><font color="#0ff">Thinking Like Human</font></p>
+                        <p class="fragment fade-in"><font color="#42a5f5">Thinking Rationally</font></p>
+                    </section>
+
+                    <section>
+                        <h2>Behavioural</h2>
+                        <p class="fragment fade-in"><font color="#0ff">Acting Humanly</font></p>
+                        <p class="fragment fade-in"><font color="#42a5f5">Acting Rationally</font></p>
+                    </section>
+
+                    <section>
+                        <h3>Acting Like Human</h3>
+                        <p>- NLP</p>
+                        <p>- Knowledge Representation</p>
+                        <p>- Automated Reasoning</p>
+                    </section>
+
+                    <section>
+                        <h3><font color="#0ff">The Turing Test Approach</font></h3>
+                        <img src="./images/chapter-1/turing-test.png" width="800" height="450"></img>
+                    </section>
+
+                    <section>
+                        <h3>Acting Rationally</h3>
+                        <p class="fragment fade-in"><font color="#0ff">The Rational Agent Approach</font></p>
+                    </section>
+
+                    <section>
+                        <h3>Acting Rationally</h3>
+                        <p class="fragment fade-in"><font color="#0ff">Agent</font></p>
+                        <p class="fragment fade-in"><font color="#0ff">Environment</font></p>
+                        <p class="fragment fade-in"><font color="#0ff">Sensors</font></p>
+                        <p class="fragment fade-in"><font color="#0ff">Stimuli</font></p>
+                        <p class="fragment fade-in"><font color="#0ff">Actuator</font></p>
+                    </section>
+
+                    <section>
+                        <h3>Acting Rationally</h3>
+                        <img src="./images/chapter-1/rational-agent.png" width="800" height="450"></img>
+                        <p>Agent</p>
+                    </section>
+
+                    <section>
+                        <h3>Thinking Humanly</h3>
+                        <p class="fragment fade-in"><font color="#0ff">The Cognitive Model Approach</font></p>
+                    </section>
+
+                    <section>
+                        <h3>Thinking Humanly</h3>
+                        <br/>
+                        <p>Human Brain</p>
+                        <p>^</p>
+                        <p>||</p>
+                        <p>||</p>
+                        <p>V</p>
+                        <p>Computer System</p>
+                    </section>
+
+                    <section>
+                        <h3>Thinking Rationally</h3>
+                        <p class="fragment fade-in"><font color="#0ff">The "Law of Thought" Approach</font></p>
+                    </section>
+                    <section>
+                        <h3>Thinking Rationally</h3>
+                        <p>- Use of logic and symbols</p>
+                        <p>- Right Thinking?</p>
+                        <p>- Requires Precise Knowledge Representation</p>
+                        <p>- Too many computations</p>
+                    </section>
+
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Rational Agents</h3>
+                        <img src="./images/chapter-1/rational-agent.png" width="800" height="450"></img>
+                        <p>Agent</p>
+                    </section>
+                    <section>
+                        <h3>Simple Reflex Agent</h3>
+                        <img src="./images/chapter-1/simple-reflex-agent.png" width="800" height="450"></img>
+                        <p>No History</p>
+                    </section>
+
+                    <section>
+                        <h3>Model-Based Reflex Agent</h3>
+                        <img src="./images/chapter-1/model-based-reflex-agent.png" width="800" height="450"></img>
+                    </section>
+
+                    <section>
+                        <h3>Goal-Based Agent</h3>
+                        <img src="./images/chapter-1/goal-based-agent.png" width="800" height="450"></img>
+                    </section>
+
+                    <section>
+                        <h3>Utility-Based Agent</h3>
+                        <img src="./images/chapter-1/utility-based-agent.png" width="800" height="450"></img>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2><font color="#0ff">Importance</font> of AI</h2>
+                    </section>
+                    <section>
+                        <p>AI is everywhere</p>
+                    </section>
+                    <section>
+                        <p>Catalyst in Decision Making</p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2><font color="#0ff">Related Fields</font></h2>
+                    </section>
+
+                    <section>
+                        <h3>NLP/NLU</h3>
+                        <p class="fragment fade-in"><font color="#0ff">Speech Recognition</font></p>
+                        <p class="fragment fade-in"><font color="#0ff">QA and bots</font></p>
+                        <p class="fragment fade-in"><font color="#0ff">Information Retrieval</font></p>
+                        <p class="fragment fade-in"><font color="#0ff">Semantics Inference</font></p>
+                    </section>
+
+                    <section>
+                        <h3>Problem Solving</h3>
+                        <p class="fragment fade-in"><font color="#0ff">Heuristic Search</font></p>
+                        <p class="fragment fade-in"><font color="#0ff">Automatic Program Writing</font></p>
+                        <p class="fragment fade-in"><font color="#0ff">Inference</font></p>
+                        <p class="fragment fade-in"><font color="#0ff">Interactive Problem Solving</font></p>
+                    </section>
+
+                    <section>
+                        <h3>Visual Perception</h3>
+                        <p class="fragment fade-in"><font color="#0ff">Pattern Recognition</font></p>
+                        <p class="fragment fade-in"><font color="#0ff">Scene Analysis</font></p>
+                        <p class="fragment fade-in"><font color="#0ff">Object Classification/Localization/Segmentation</font></p>
+                    </section>
+
+                    <section>
+                        <h3>Robotics</h3>
+                        <p class="fragment fade-in"><font color="#0ff">Exploration</font></p>
+                        <p class="fragment fade-in"><font color="#0ff">Navigation</font></p>
+                        <p class="fragment fade-in"><font color="#0ff">Industrial Automation</font></p>
+                        <p class="fragment fade-in"><font color="#0ff">Military</font></p>
+                    </section>
+
+                    <section>
+                        <h3>Games</h3>
+                        <p class="fragment fade-in"><font color="#0ff">You know it...</font></p>
+                    </section>
+
+                    <section>
+                        <h3>Neuroscience</h3>
+                    </section>
+
+                    <section>
+                        <h3>Economics</h3>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2><font color="#0ff">Brief History</font> of AI</h2>
+                    </section>
+
+                    <section>
+                        <img src="./images/chapter-1/history.jpeg"></img>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2><font color="#0ff">Applications</font> of AI</h2>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2><font color="#0ff">Definitions and Importance</font> of Knowlege and Learning</h2>
+                    </section>
+
+                    <section>
+                        <h3>Knowledge</h3>
+                        <p class="fragment fade-in"><font color="#0ff">Facts</font></p>
+                    </section>
+
+                    <section>
+                        <h3>Knowledge Storing</h3>
+                        <p class="fragment fade-in"><font color="#0ff">Symbols</font></p>
+                        <p class="fragment fade-in"><font color="#0ff">Internal Representation</font></p>
+                    </section>
+
+                    <section>
+                        <h3>Knowledge Representation</h3>
+                        <p class="fragment fade-in"><font color="#0ff">Mathematical Model</font></p>
+                        <p class="fragment fade-in"><font color="#0ff">Natural Language</font></p>
+                        <p class="fragment fade-in"><font color="#0ff">Speech</font></p>
+                        <p class="fragment fade-in"><font color="#0ff">Image</font></p>
+                    </section>
+
+                    <section>
+                        <h3>Importance of Knowledge?</h3>
+                    </section>
+
+                    <section>
+                        <h3>Learning</h3>
+                        <p class="fragment fade-in"><font color="#0ff">Changes</font></p>
+                        <p class="fragment fade-in"><font color="#0ff">Generalization</font></p>
+                        <p class="fragment fade-in"><font color="#0ff">Improvement</font></p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Myths</h3>
+                    </section>
+
+                    <section>
+                        <p><strike>AI is all about making machines that can think</strike></p>
+                        <p class="fragment fade-in">
+                            <span style="font-size:0.8em; color:#90caf9">Not Even Close</span>
+                        </p>
+                    </section>
+
+                    <section>
+                        <p><strike>AI won’t be bound by human ethics</strike></p>
+                    </section>
+
+                    <section>
+                        <p><strike>AI will spin out of control</strike></p>
+                        <p class="fragment fade-in">
+                            <span style="font-size:0.8em; color:#90caf9">Autonomous Systems only do good for what they are trained for</span>
+                        </p>
+                    </section>
+
+                    <section>
+                        <p><strike>AI will be a series of sudden breakthroughs</strike></p>
+                        <p class="fragment fade-in">
+                            <span style="font-size:0.8em; color:#90caf9">Slow and Steady</span>
+                        </p>
+                    </section>
+
+                    <section>
+                        <p>News Media Be Like</p>
+                        <img src="./images/chapter-1/news-fb.jpeg"></img>
+                    </section>
+
+                    <section>
+                        <p>News Media Be Like</p>
+                        <img src="./images/chapter-1/news-singularity.jpeg"></img>
+                    </section>
+
+                    <section>
+                        <p>Artifically Intelligent?</p>
+                        <p class="fragment fade-in">
+                            <span style="font-size:0.8em; color:#90caf9">Perhaps, NO</span>
+                        </p>
+                        <img src="./images/chapter-1/sophia.jpg" height="450"></img>
+                    </section>
+
+                    <section>
+                        <p>Should We Fear?</p>
+                        <p class="fragment fade-in">
+                            <span style="font-size:0.8em; color:#90caf9">No. But Yes in some ways due to social media.</span>
+                        </p>
+                        <img src="./images/chapter-1/ai-destroy.jpeg" height="450"></img>
+                    </section>
+
+                    <section>
+                        <p>AI has become a misnomer</p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Where Are We?</h2>
+                    </section>
+
+                    <section>
+                        <h3>Artificial Super Intelligence</h3>
+                        <p class="fragment fade-in">
+                            <span style="font-size:0.8em; color:#90caf9">Perhaps, Never...</span>
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Artificial General Intelligence</h3>
+                        <p class="fragment fade-in">
+                            <span style="font-size:0.8em; color:#90caf9">Not quite sure we will make it there...</span>
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Artificial Narrow Intelligence</h3>
+                        <p class="fragment fade-in">
+                            <span style="font-size:0.8em; color:#90caf9">Definitely, here...</span>
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Reality</h2>
+                    </section>
+
+                    <section>
+                        <h2>Still a baby</h2>
+                        <img src="./images/chapter-1/baby.jpg"></img>
+                    </section>
+
+                    <section>
+                        <h2>Data. Data. Data.</h2>
+                        <img src="./images/chapter-1/machine_learning.png"></img>
+                    </section>
+
+                    <section>
+                        <img src="./images/chapter-1/gpu.jpeg"></img>
+                    </section>
+
+                    <section>
+                        <h3>This...</h3>
+                        <img src="./images/chapter-1/fb.jpeg"></img>
+                    </section>
+
+
+                    <section>
+                        <h3>Precise Segmentation</h3>
+                        <img src="./images/chapter-1/detectron.jpg"></img>
+                    </section>
+
+                    <section>
+                        <h3>Real Time Object Detection</h3>
+                        <img src="./images/chapter-1/yolo.png"></img>
+                    </section>
+
+                    <section>
+                        <p>Baidu’s AI Mimicks Voice </p>
+                        <img src="./images/chapter-1/baidu.jpg"></img>
+                    </section>
+
+                    <section>
+                        <p>Aid in Tumor Diagnosis</p>
+                        <img src="./images/chapter-1/diagnosis.jpeg" height="500"></img>
+                    </section>
+
+                    <section>
+                        <p>Aid in Surgery</p>
+                        <img src="./images/chapter-1/surgery.jpeg" height="500"></img>
+                    </section>
+
+                    <section>
+                        <h2>Software 2.0</h2>
+                        <p><span style="font-size:1.0em; color:#90caf9">-Andrej Karpathy</span></p>
+                    </section>
+
+
+                </section>
+
+                <section>
+                    <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+                        <h2>What should we fear?</h2>
+                    </section>
+
+                    <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+                        <h3>This?</h3>
+                        <p class="fragment fade-in"><font color="#ffffff">NO!</font></p>
+                        <img src="./images/chapter-1/dystopia.png"></img>
+                    </section>
+
+                    <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+                        <h3>Faking using Deep Learning</h3>
+                        <img src="./images/chapter-1/fake-videos.jpeg"></img>
+                    </section>
+
+                    <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+                        <h3>Personalized Influences</h3>
+                    </section>
+
+                    <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+                        <h3>Adverserial Attacks</h3>
+                        <img src="./images/chapter-1/adverserial.jpeg"></img>
+                    </section>
+
+                    <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+                        <h3>Confusing Computer Vision</h3>
+                        <img src="./images/chapter-1/stop.jpg"></img>
+                    </section>
+
+                </section>
+
+                <section data-transition="slide" data-background="#00533c" data-background-transition="zoom">
+                    <h2>Experimentation</h2>
+                </section>
+
+                <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+                    <h2>Learn. Share.</h2>
+                </section>
+
+
+
+            </div>
+
+		</div>
+
+		<script src="./lib/js/head.min.js"></script>
+		<script src="./js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				mouseWheel: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: './plugin/zoom-js/zoom.js', async: true },
+					{ src: './plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

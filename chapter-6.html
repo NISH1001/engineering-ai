@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Machine Learning</title>
+
+		<meta name="description" content="Experience">
+		<meta name="author" content="Paradox">
+
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="./css/reveal.css">
+		<link rel="stylesheet" href="./css/theme/league.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="./lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? './css/print/pdf.css' : './css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+                <section>
+                    <div style="font-size: 2.8em"><br><font color="#90caf9"><span style="font-size:1.3em">Machine Learning</span></font></div>
+                    <div>
+                        <span style="font-size: 0.6em;"><font color="#fff">Nishan Pantha / <i>@nishparadox</i></font></span> <br>
+                        <span style="font-size: 0.6em;"><font color="#fff"><i>nishanpantha@gmail.com</i></font></span> <br>
+                    </div>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>What This Chapter Is About</h2>
+                    </section>
+                    <section>
+                        <p>- Learning and Concepts</p>
+                        <p>- Why Machine Learning<p>
+                        <p>- Types of Learning<p>
+                        <p>- Neural Networks<p>
+                        <p>- Genetic Algorithm<p>
+                        <p>- Fuzzy Learning<p>
+                        <p>- Boltzman Machines<p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Machine Learning</h3>
+                    </section>
+                    <section>
+                        <h3>One of ways to achieve AI</h3>
+                    </section>
+                    <section>
+                        <img src="./images/chapter-6/ml.png" width="800" height="600"></img>
+                    </section>
+                    <section>
+                        <h3>AI Hierarchy</h3>
+                        <img src="./images/chapter-6/ai-hierarchy.png" width="800" height="600"></img>
+                    </section>
+                    <section>
+                        <img src="./images/chapter-6/learning.jpeg" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <img src="./images/chapter-6/ml-field.png" width="1000" height="550"></img>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Learning</h3>
+                    </section>
+
+                    <section>
+                        <h3>What is Learning</h3>
+                        <p>- Acquiring new knowledge<p>
+                        <p>- Modifying existing knowledge<p>
+                    </section>
+                    <section>
+                        <h3>How</h3>
+                        <p>- Changes<p>
+                        <p>- Generalization<p>
+                        <p>- Improvement<p>
+                    </section>
+
+                    <section>
+                        <h3>Different Learning Methods</h3>
+                        <p class="fragment fade-in">Inductive Learning</p>
+                        <p class="fragment fade-in">Deductive Learning</p>
+                    </section>
+
+                    <section>
+                        <h3>Inductive Learning</h3>
+                        <p>Find patterns from data</p>
+                    </section>
+
+                    <section>
+                        <h3>Deductive Learning</h3>
+                        <p>Derive conclusion from facts</p>
+                        <p>A=B,B=C -> A=C<p>
+                    </section>
+                </section>
+
+
+                <section>
+                    <section>
+                        <h3>Learning</h3>
+                        <img src="./images/chapter-6/ml-hierarchy.jpe" width="800" height="600"></img>
+                    </section>
+                    <section>
+                        <h3>Rote Learning</h3>
+                        <p>Memorization</p>
+                    </section>
+                    <section>
+                        <h3>Rote Learning</h3>
+                        <img src="./images/chapter-6/rote-learning.jpg" width="1000" height="550"></img>
+                    </section>
+
+                    <section>
+                        <h3>Learning by Analogy</h3>
+                    </section>
+                    <section>
+                        <img src="./images/chapter-6/analogy-1.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <img src="./images/chapter-6/analogy-2.png" width="1000" height="550"></img>
+                    </section>
+
+                    <section>
+                        <h3>Explanation-Based Learning</h3>
+                        <p>Learning by observing and analyzing human solutions to specific problems</p>
+                    </section>
+                    <section>
+                        <img src="./images/chapter-6/ebl.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <img src="./images/chapter-6/ebl-2.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <p>After lerning, go directly from facts to solution</p>
+                        <img src="./images/chapter-6/ebl-3.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <p>Prototypical EBL Architecture</p>
+                        <img src="./images/chapter-6/ebl-4.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <h3>Explanation-Based Learning</h3>
+                        <p>- Needs many examples</p>
+                        <p>- Broken Explanations?</p>
+                    </section>
+
+                    <section>
+                        <h3>Learning from Examples</h3>
+                        <p>- Inductive Learning</p>
+                    </section>
+
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Inductive Learning</h3>
+                    </section>
+                    <section>
+                        <h3>Inductive Learning</h3>
+                        <p>- Find Patterns</p>
+                    </section>
+                    <section>
+                        <img src="./images/chapter-6/lr.gif" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <img src="./images/chapter-6/kmeans.gif" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <img src="./images/chapter-6/tree-fit.gif" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <img src="./images/chapter-6/cnn.gif" width="1000" height="550"></img>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Learning Framework</h3>
+                    </section>
+                    <section>
+                        <img src="./images/chapter-6/learning-framework.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <h3>Environment</h3>
+                        <p>- Nature and Quality of Information</p>
+                    </section>
+                    <section>
+                        <h3>Information Level</h3>
+                        <p>- High Level -> Abstract -> Broad Class of Problems</p>
+                        <p>- Low Level -> Details -> Single Problem</p>
+                    </section>
+                    <section>
+                        <h3>Information Quality</h3>
+                        <p>- Noise Free</p>
+                        <p>- Reliable</p>
+                        <p>- Ordered</p>
+                    </section>
+                    <section>
+                        <h3>Knowledge Base</h3>
+                        <p>- Expressive</p>
+                        <p>- Modifiable</p>
+                        <p>- Extensibility</p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Genetic Algorithm</h3>
+                    </section>
+                    <section>
+                        <h3>Modeling Search as Evolution</h3>
+                    </section>
+                    <section>
+                        <p>- Crossover<p>
+                        <p>- Mutation<p>
+                        <p>- Survival of the fittest<p>
+                        <p>- Survival of the most diverse<p>
+                    </section>
+                    <section>
+                        <h3>Rocket Evolution</h3>
+                        <img src="./images/chapter-6/ga-rocket.gif" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <h3>Simple Evolving Organism</h3>
+                        <img src="./images/chapter-6/ga-organism.gif" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <p>- Heredity</p>
+                        <p>- Variation</p>
+                        <p>- Selection</p>
+                    </section>
+                    <section>
+                        <img src="./images/chapter-6/ga-flowchart.jpg" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <img src="./images/chapter-6/ga-cycle.jpg" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <h3>General Algorithm</h3>
+                        <p>A) generate initial population</p>
+                        <p>B) evaluate fitness of all</p>
+                        <p>C) select fitter population for crossover</p>
+                        <p>D) cross-over</p>
+                        <p>E) mutate</p>
+                        <p>F) evaluate fitness of offspring </p>
+                        <p>Loop while reaching desired fitness</p>
+                    </section>
+                    <section>
+                        <p>Roulette Wheel</p>
+                        <img src="./images/chapter-6/ga-wheel.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <img src="./images/chapter-6/ga-bucket.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <h3>Disadvantage</h3>
+                        <p>- Less efficient in terms of speed of convergence</p>
+                        <p>- Tendency to get stuck in local maxima</p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Fuzzy Learning</h3>
+                    </section>
+                    <section>
+                        <img src="./images/chapter-6/fuzzy.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <p>Crisp</p>
+                        <img src="./images/chapter-6/fuzzy-crisp.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <p>Fuzzy</p>
+                        <img src="./images/chapter-6/fuzzy-fuzzy.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <p>Fuzzy Rule-Based System</p>
+                        <img src="./images/chapter-6/fuzzy-rule-based.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <p>Fuzzy Logic Operators</p>
+                        <img src="./images/chapter-6/fuzzy-and.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <p>Fuzzy Logic Operators</p>
+                        <img src="./images/chapter-6/fuzzy-or.png" width="1000" height="550"></img>
+                    </section>
+                    <section>
+                        <p>De-Fuzzify Result</p>
+                        <img src="./images/chapter-6/fuzzy-defuzz.png" width="1000" height="550"></img>
+                    </section>
+                </section>
+
+                <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+                    <p>Research</p>
+                </section>
+
+            </div>
+
+		</div>
+
+		<script src="./lib/js/head.min.js"></script>
+		<script src="./js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				mouseWheel: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: './plugin/zoom-js/zoom.js', async: true },
+					{ src: './plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
